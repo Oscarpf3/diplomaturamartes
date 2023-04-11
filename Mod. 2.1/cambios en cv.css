@@ -1,0 +1,49 @@
+h1{
+    color:midnightblue; /*color de la tipografia*/
+    font-size: 60px;
+    background-color:gray ;/* fondo color*/
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+h2{
+   color: green;
+   
+     text-align: left ; 
+     text-transform: uppercase;
+
+}
+p{
+    color: rebeccapurple;
+    line-height: 35px; /*espacio entrelineados*/
+}
+.destacados{ 
+    color: red;
+    font-weight: bold;
+    font-style: oblique ;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+h3{
+    font-size: 30px;
+}
+#caja { 
+    background-color:beige;
+    width: 350px;
+    height: 150px;
+    /* border: 3px solid black; */
+    border: 3px solid gold;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#caja2 { 
+        background-color:beige;
+        width: 350px;
+        height: 150px;
+        /* border: 3px solid black; */
+        border: 3px solid gold;
+        padding: 10px;
+        margin-left: 38px;
+        box-sizing: border-box;
+}
+    

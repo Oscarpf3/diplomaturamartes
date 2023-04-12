@@ -1,22 +1,32 @@
+/*font-family: 'Playfair Display', serif;
+font-family: 'Sedgwick Ave Display', cursive;*/
+
+
 h1{
     color:midnightblue; /*color de la tipografia*/
     font-size: 60px;
-    background-color:gray ;/* fondo color*/
+    
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Sedgwick Ave Display', cursive; 
 
 }
 
 h2{
-   color: green;
+   color: rgba(82, 9, 171, 0.751);
    
      text-align: left ; 
      text-transform: uppercase;
+     font-family: 'Playfair Display', serif;
 
 }
 p{
     color: rebeccapurple;
     line-height: 35px; /*espacio entrelineados*/
+    column-count: 4;
+    column-gap: 24px;
+    column-rule: 3px solid #040b4a;
+    font-family: 'Playfair Display', serif;
 }
 .destacados{ 
     color: red;
@@ -28,22 +38,34 @@ h3{
     font-size: 30px;
 }
 #caja { 
+    font-family: 'Playfair Display', serif;
     background-color:beige;
     width: 350px;
     height: 150px;
     /* border: 3px solid black; */
-    border: 3px solid gold;
-    padding: 30px;
+    padding: 25px;
     box-sizing: border-box;
+    border: 3px solid green; 
+    border-radius: 0px 150px 160px 0px;
+-webkit-border-radius: 0px 150px 160px 0px;
+-moz-border-radius: 0px 150px 160px 0px;
+    border: 8px solid #7fdc8f;
+    margin-left: 1px;
+    box-shadow: 10px -9px 31px -2px rgba(0,0,0,0.75);
 }
 #caja2 { 
         background-color:beige;
         width: 350px;
         height: 150px;
         /* border: 3px solid black; */
-        border: 3px solid gold;
+        border-radius: 9px 75px 62px 12px;
+        -webkit-border-radius: 9px 75px 62px 12px;
+        -moz-border-radius: 9px 75px 62px 12px;
+        border: 6px solid #2d4ea6;
         padding: 10px;
         margin-left: 38px;
         box-sizing: border-box;
+        box-shadow: 8px -11px 29px 0px rgba(67,173,69,0.75);
+
 }
     

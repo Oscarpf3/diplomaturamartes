@@ -4,9 +4,9 @@ div{
     background-color: yellow;
 }
 
-/* div:hover {
+div:hover {
   background-color: #F89B4D;
-} */
+} 
 
 /* :first-child y :last-child */
 /* :nth-child()  */
@@ -18,12 +18,12 @@ span{
 }
 
 
-/* span::after{
+ span::after{
  content: 'despues';
  background-color: red;
-} */
-/* 
+} 
+
 span::before{
  content: 'antes';
- background-color: blue;
-} */
+ background-color: rgba(0, 136, 255, 0.645);
+} 

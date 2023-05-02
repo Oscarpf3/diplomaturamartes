@@ -1,0 +1,47 @@
+
+.contenedor{
+	background-color: white;
+	display: flex; 
+	border: solid black;
+	width: 450px;
+	height: 450px;
+	flex-direction: column;
+	margin: auto;
+	align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.caja1{
+	text-align: center;
+	background-color:red;
+	width: 150px;
+	height: 150px;
+	font-size: 30px;
+	line-height: 150px;
+	color: white;
+
+	
+
+}
+.caja2{
+	background-color: blue;
+	width: 150px;
+	height: 150px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 150px;
+	color: white;
+
+
+}
+.caja3{
+	background-color: green;
+	width: 150px;
+	height: 150px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 150px;
+	color: white;
+
+}

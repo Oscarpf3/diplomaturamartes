@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-size: 100%;
+	color: #000;
+	background: tan;
+}
+
+@media screen and (max-width: 992px) {
+	body {
+		background-color: blue;
+
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		background-color: rgb(33, 33, 5);
+		
+	}
+
+	#contenedor {
+		width: 100%;
+		background: #8FA68E;
+		margin-right: auto;
+		margin-left: auto;
+		overflow: hidden;
+	}
+
+	#nav1 {
+		background: #b98b21;
+		float: left;
+		margin: 0 0 0 0px;
+		width: 100%;
+		color: black;
+	}
+
+	#section1 {
+		background: #F1F2C0;
+		float: left;
+		margin: 0 0 0 0px;
+		width: 100%;
+		border-top: 1px;
+		border-bottom: 1px;
+		border-left: 0px;
+		border-right: 0;
+		border-style: solid;
+	}
+
+	#aside1 {
+		background: #CCC59E;
+		float: left;
+		margin: 0 0 0 0px;
+		width: 100%;
+	}
+
+	#ul1 {
+		list-style-type: none;
+		color: #000;
+		
+	}
+
+	#a1 {
+		color: black;
+		text-decoration: none;
+	}
+}
+
+
+#contenedor {
+	width: 800px;
+	background: #8FA68E;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+}
+
+nav {
+	background: #CC3910;
+	float: left;
+	width: 160px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #F1F2C0;
+	text-decoration: none;
+}
+
+section {
+	background: #F1F2C0;
+	float: left;
+	margin: 0 0 0 25px;
+	width: 400px;
+
+}
+
+aside {
+	background: #CCC59E;
+	float: right;
+	width: 190px;
+}

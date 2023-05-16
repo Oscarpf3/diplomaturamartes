@@ -1,0 +1,231 @@
+/*
+font-family: 'Open Sans', sans-serif;
+*/
+/*arranca index */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+header {
+    background-color: rgb(76, 51, 203);
+    padding: 16px 0;
+
+}
+
+header h1 {
+
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    bottom: 35px;
+    margin-left: 10px;
+
+}
+
+nav {
+    background-color: rgb(52, 179, 224);
+    margin-bottom: 20px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav li {
+    flex-grow: 1;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: rgb(134, 201, 218);
+}
+
+footer {
+    background-color: rgb(204, 232, 232);
+    clear: both;
+    color: rgb(37, 24, 100);
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+
+}
+
+nav ul li a.activo {
+    background-color: rgb(9, 130, 187);
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: rgb(11, 44, 92);
+    font-weight: 400px;
+}
+
+/*estilos y reglas para home*/
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+
+}
+
+.testimonios {
+    width: 25%;
+
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p {
+    font-size: 20px;
+}
+
+.testimonio {
+    background-color: antiquewhite;
+    padding: 16px;
+}
+
+.cita {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+    background-color: chartreuse;
+    display: block;
+}
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    background-color: lightcoral;
+    display: block;
+    margin: 12px 0;
+}
+
+.testimonio .cita {
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    background-color: rgb(211, 238, 54);
+    display: block;
+
+}
+
+/*fin del home*/
+
+/*inicio nosotros*/
+
+.historia p {
+    font-size: 12px;
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.persona {
+    border: 1px solid rgb(177, 206, 209);
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    /*background-color: orangered;*/
+    box-sizing: border-box;
+
+}
+
+.persona img {
+    border-radius: 60%;
+    max-width: 60px;
+    box-shadow: 0 0 5px rgb(50, 34, 9);
+
+}
+
+.persona h5,
+.persona h6 {
+    margin: 0;
+    font-weight: normal;
+    color: darkblue;
+}
+
+.persona h5 {
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+
+.persona h6 {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.persona p {
+    color: darkslateblue;
+    font-size: 10px;
+}
+
+/*fin de nosotros*/
+
+/*inicio servicios*/
+
+.servicio {
+    border: 1px solid blanchedalmond;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.servicio .info h4 {
+    color: cornflowerblue;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid rgb(17, 92, 125);
+    padding-bottom: 10px;
+
+}
+
+.servicio .info p {
+    font-size: 11px;
+
+}
+
+.servicio img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}

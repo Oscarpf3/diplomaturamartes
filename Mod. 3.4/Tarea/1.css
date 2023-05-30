@@ -1,0 +1,20 @@
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+#cuadrado1 {
+    background-color: orange;
+
+}
+
+#cuadrado2 {
+    background-color: yellow;
+}
+
+#cuadrado3 {
+    background-color: violet;
+}

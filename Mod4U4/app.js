@@ -3,15 +3,11 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+ 
+var session = require('express-session'); 
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var productosRouter = require('./routes/productos');
-var preciosRouter = require('./routes/precios');
-var promocionRouter = require('./routes/promocion');
-
-
-const { send } = require('process');
 
 var app = express();
 
@@ -24,24 +20,48 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/productos', productosRouter);
-app.use('/precios', preciosRouter);
-app.use('/promocion',promocionRouter);u
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use(session({
+  secret: 'cero3cero3cuatro5seis',
+  resave: false,
+  saveUninitialized: true
+}))
 
-app.get('/prueba', function(req,res)
- {
-  res.send('Hola soy la pagina de prueba')})
+//app.use('/', indexRouter);
+//app.use('/users', usersRouter);
 
-  app.get('/tarea1', function(req,res)
-  {
-   res.send('Hola soy la pagina de tarea')})
+app.get('/', function (req, res){
+  var conocido = Boolean(req.session.nombre);
 
-   app.get('/tarea2', function(req,res)
- {
-  res.send('Hola soy la otra pagina de tarea')})
+  res.render('index', {
+    title: 'Sesiones en Express.js',
+    conocido: conocido, 
+    nombre: req.session.nombre
+  });
+})
+
+
+app.post('/ingresar', function (req, res){
+  if (req.body.nombre) {
+    req.session.nombre = req.body.nombre
+  }
+  res.redirect('/')
+});
+
+app.get('/salir', function (req, res) {
+  req.session.destroy();
+  res.redirect('/');
+});
+
+app.get('/verificar-edad/:edad', function(req, res) {
+  const edad = parseInt(req.params.edad);
+
+  if (edad >= 18) {
+    res.send('Bienvenido');
+  } else {
+    res.send('Disculpa, no podes ingresar');
+  }
+});
 
 
 // catch 404 and forward to error handler
